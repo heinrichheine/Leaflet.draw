@@ -9,45 +9,45 @@ L.drawLocal = {
 	draw: {
 		toolbar: {
 			actions: {
-				title: 'Abbrechen Zeichnung',
+				title: 'Zeichnung Abbrechen',
 				text: 'Abbrechen'
 			},
 			undo: {
-				title: 'Delete last point drawn',
-				text: 'Delete last point'
+				title: 'Letzten gezeichneten Punkt löschen',
+				text: 'Lösche letzten Punkt'
 			},
 			buttons: {
-				polyline: 'Zeichnen Sie eine Polylinie',
-				polygon: 'Zeichnen Sie ein Polygon',
-				rectangle: 'Zeichnen Sie ein Rechteck',
-				circle: 'Zeichnen Sie einen Kreis',
-				marker: 'Zeichnen Sie einen Marker'
+				polyline: 'Polylinie zeichnen',
+				polygon: 'Polygon zeichnen',
+				rectangle: 'Rechteck zeichnen',
+				circle: 'Kreis zeichnen',
+				marker: 'Marker zeichnen'
 			}
 		},
 		handlers: {
 			circle: {
 				tooltip: {
-					start: 'Klicken und ziehen Sie einen Kreis zu zeichnen.'
+					start: 'Klicken und ziehen Sie um einen Kreis zu zeichnen.'
 				}
 			},
 			marker: {
 				tooltip: {
-					start: 'Karte anklicken Marker zu platzieren.'
+					start: 'Karte anklicken um einen Marker zu platzieren.'
 				}
 			},
 			polygon: {
 				tooltip: {
-					start: 'Klicken, um Zeichnungsform starten.',
-					cont: 'Klicken, um weiter zeichnen Form.',
-					end: 'Klicken erste Punkt, um diese Form zu schließen.'
+					start: 'Klicken, eine Form zu zeichnen.',
+					cont: 'Klicken, um Form weiter zu zeichnen.',
+					end: 'Klicken sie auf den ersten Punkt um die Form abzuschließen.'
 				}
 			},
 			polyline: {
-				error: '<strong>Error:</strong> shape edges cannot cross!',
+				error: '<strong>Fehler:</strong> Ränder können sich nicht überkreuzen!',
 				tooltip: {
-					start: 'Klicken Sie auf Zeichnung Zeile zu beginnen.',
-					cont: 'Klicken Sie auf Zeichnung Linie fortzusetzen.',
-					end: 'Klicken letzten Punkt zu Linie zu beenden.'
+					start: 'Klicken Sie um mit dem Zeichnen einer Linie zu beginnen.',
+					cont: 'Klicken Sie auf die Zeichnung um die Linie fortzusetzen.',
+					end: 'Klicken Sie auf den letzten Punkt um die Linie zu beenden.'
 				}
 			},
 			rectangle: {
@@ -57,7 +57,7 @@ L.drawLocal = {
 			},
 			simpleshape: {
 				tooltip: {
-					end: 'Lassen Sie die Maustaste, um die Zeichnung abzuschließen.'
+					end: 'Lassen sie die Maustaste los, um die Zeichnung abzuschließen.'
 				}
 			}
 		}
@@ -66,31 +66,31 @@ L.drawLocal = {
 		toolbar: {
 			actions: {
 				save: {
-					title: 'Speichern Änderungen.',
+					title: 'Änderungen speichern.',
 					text: 'Speichern'
 				},
 				cancel: {
-					title: 'Abbrechen-Bearbeitung, werden alle Änderungen verworfen.',
+					title: 'Bearbeitung abbrechen, es werden alle Änderungen verworfen.',
 					text: 'Abbrechen'
 				}
 			},
 			buttons: {
-				edit: 'Schichten bearbeiten',
-				editDisabled: 'No layers to edit.',
-				remove: 'Schichten löschen.',
-				removeDisabled: 'No layers to delete.'
+				edit: 'Ebenen bearbeiten',
+				editDisabled: 'Keine Ebenen zum Bearbeiten.',
+				remove: 'Ebenen löschen.',
+				removeDisabled: 'Keine Ebenen zum Löschen.'
 			}
 		},
 		handlers: {
 			edit: {
 				tooltip: {
-					text: 'Drag Griffe oder Marker-Funktion zu bearbeiten.',
-					subtext: 'Klicken Sie auf Abbrechen, um Änderungen rückgängig zu machen.'
+					text: 'Ziehen sie eine Leiste oder einen Marker zum bearbeiten einer Funktion.',
+					subtext: 'Klicken Sie auf Abbrechen, um die Änderungen rückgängig zu machen.'
 				}
 			},
 			remove: {
 				tooltip: {
-					text: 'Klicken Sie auf eine Funktion zum Entfernen von'
+					text: 'Klicken Sie auf eine Funktion um diese zu Entfernen'
 				}
 			}
 		}
